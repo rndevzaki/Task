@@ -1,0 +1,27 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json", // Use the older base config
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Completeness */
+    "skipLibCheck": true, /* Skip type checking all .d.ts files. */
+
+    /* Alias setup */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "strict": true // Keep strict mode
+  },
+   "include": [ // Ensure src is included
+     "src/**/*",
+     "index.js", // Include root files if needed
+     "App.tsx"
+   ],
+   "exclude": [
+     "node_modules",
+     "babel.config.js",
+     "metro.config.js",
+     "jest.config.js"
+   ]
+}
